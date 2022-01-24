@@ -60,10 +60,7 @@ my-app
 ├── node_modules
 ├── package.json
 ├── .gitignore
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
+├── index.html
 └── src
     ├── assets/
     ├── componens/
