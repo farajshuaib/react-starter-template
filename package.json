@@ -5,6 +5,12 @@
     "description": "a react template starter that make creating new project more easier with ready installed dependencies and state,routes seted up",
     "repository": {
         "type": "git",
-        "url": ""
-    }
+        "url": "https://github.com/farajshuaib/react-with-all-dep.git"
+    },
+    "bugs": {
+        "url": "https://github.com/farajshuaib/react-with-all-dep/issues"
+    },
+    "keywords": ["react", "js", "template"],
+    "homepage": "https://github.com/farajshuaib/react-with-all-dep",
+    "license": "ISC"
 }
