@@ -6,11 +6,11 @@ import { useAppDispatch } from "../../store";
 import { login } from "../../store/actions/auth";
 import { useNavigate } from "react-router-dom";
 
-const Login: React.FC = () => {
+const Registeration: React.FC = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
   return <div></div>;
 };
 
-export default Login;
+export default Registeration;

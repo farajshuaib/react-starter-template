@@ -10,7 +10,15 @@
     "bugs": {
         "url": "https://github.com/farajshuaib/react-with-all-dep/issues"
     },
-    "keywords": ["react", "js", "template"],
+    "keywords": [
+        "react",
+        "js",
+        "template"
+    ],
     "homepage": "https://github.com/farajshuaib/react-with-all-dep",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^2.5.1",
+        "prettier-plugin-tailwindcss": "^0.1.3"
+    }
 }

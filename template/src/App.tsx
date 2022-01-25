@@ -1,45 +1,47 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import { useRoutes } from "react-router-dom";
+import router from "./router";
+import { useAppDispatch } from "./store";
+import { authenticate } from "./store/actions/auth";
+import { LoadingScreen } from "./components";
+import { useNetworkState } from "react-use";
+import { toast } from "react-toastify";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+  const dispatch = useAppDispatch();
+  const networkState = useNetworkState();
+  const [loading, setLoading] = useState<boolean>(true);
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
-}
+  useEffect(() => {
+    if (!networkState.online) {
+      toast.error("no internet connection", {
+        closeButton: false,
+        position: "top-center",
+      });
+    }
+  }, [networkState]);
 
-export default App
+  const routing = useRoutes(router());
+
+  const isLoggedIn = async () => {
+    try {
+      await dispatch(authenticate());
+      setLoading(false);
+    } catch {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    isLoggedIn();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
+
+  return routing;
+};
+
+export default App;
