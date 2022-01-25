@@ -3,6 +3,9 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 import Login from "../screens/auth/Login";
+import ForgetPassword from "../screens/auth/ForgetPassword"
+import Home from "../screens/Home";
+import About from "../screens/About";
 import { Layout } from "../components";
 
 import { useAppSelector } from "../store";
@@ -16,9 +19,13 @@ const Routes = () => {
       // protected routes
       children: [
         {
-          path: 'home',
-          element: <div></div>
-        }
+          path: "home",
+          element: <Home />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
       ],
     },
     {
@@ -29,7 +36,7 @@ const Routes = () => {
     {
       // public routes
       path: "/forget-password",
-      element: !userData ? <div></div> : <Navigate to="/" />,
+      element: !userData ? <ForgetPassword /> : <Navigate to="/" />,
     },
   ];
 };
