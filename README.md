@@ -14,7 +14,7 @@ If you have questions or need help, please ask in [GitHub Discussions](https://g
 ## Quick Overview
 
 ```sh
-npx create-react-app my-app template react-with-all-dep
+npx create-react-app my-app --template react-with-all-dep
 cd my-app
 npm start
 ```
