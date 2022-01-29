@@ -7,7 +7,7 @@
 </p>
 
 
-## Main features installed:
+## Main features that already installed:
 <ul>
 <li>development environment using vite</li>
 <li>state management using redux with redux-thunk</li>
