@@ -3,14 +3,19 @@
 </p>
 
 <p align="center">
-    A Minimal Setup & Fast Boilerplate for <a href="https://reactjs.org/">React.js</a> with <a href="https://vitejs.dev/">Vite</a> and tailwindcss + all most used dependency
+    A Minimal Setup for <a href="https://reactjs.org/">React.js</a> with <a href="https://vitejs.dev/">Vite</a> and tailwindcss + all most used dependency
 </p>
 
 
-Create React apps with no build configuration.
+## Main features installed:
+<ul>
+<li>development environment using vite</li>
+<li>state management using redux with redux-thunk</li>
+<li>react-router v6</li>
+<li>tailwindcss</li>
+<li>service worker registration</li>
+</ul>
 
-- [Creating an App](#creating-an-app) – How to create a new empty app.
-- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
 
 
 ## Quick Overview
