@@ -1,20 +1,22 @@
-# Create React App 
+<p align="center">
+    <img src="/one-year-of-react-native.png"></img>
+</p>
 
-<img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
+<p align="center">
+    A Minimal Setup & Fast Boilerplate for <a href="https://reactjs.org/">React.js</a> with <a href="https://vitejs.dev/">Vite</a> and tailwindcss + all most used depedency
+</p>
+
 
 Create React apps with no build configuration.
 
 - [Creating an App](#creating-an-app) – How to create a new app.
 - [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
 
-Create React App works on macOS, Windows, and Linux.<br>
-If something doesn’t work, please [file an issue](https://github.com/facebook/create-react-app/issues/new).<br>
-If you have questions or need help, please ask in [GitHub Discussions](https://github.com/facebook/create-react-app/discussions).
 
 ## Quick Overview
 
 ```sh
-npx create-react-app my-app --template react-with-all-dep
+npx create-react-app my-app --template starter-kit
 cd my-app
 npm start
 ```
@@ -35,7 +37,7 @@ To create a new app, you may choose one of the following methods:
 ### npx
 
 ```sh
-npx create-react-app my-app --template react-with-all-dep
+npx create-react-app my-app --template starter-kit
 ```
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
@@ -46,7 +48,7 @@ _`npm init <initializer>` is available in npm 6+_
 ### Yarn
 
 ```sh
-yarn create react-app my-app --template react-with-all-dep
+yarn create react-app my-app --template starter-kit
 ```
 
 _[`yarn create <starter-kit-package>`](https://yarnpkg.com/lang/en/docs/cli/create/) is available in Yarn 0.25+_
@@ -64,16 +66,18 @@ my-app
 └── src
     ├── assets/
     ├── componens/
-    ├── constant
-    ├── context
-    ├── hook
-    ├── router
-    ├── screens
-    └── services
-    └── store
-    └── styles
-    └── types
-    └── utils
+    ├── constant/
+    ├── context/
+    ├── hook/
+    ├── helpers/
+    ├── router/
+    ├── tests/
+    ├── screens/
+    ├── store/
+    ├── styles/
+    ├── types/
+    ├── services/
+    ├── utils/
     └── main.jsx
     └── app.jsx
 ```
@@ -87,17 +91,12 @@ cd my-app
 
 Inside the newly created project, you can run some built-in commands:
 
-### `npm start` or `yarn start`
+### `npm dev` or `yarn dev`
 
 Runs the app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
 
-<p align='center'>
-<img src='https://cdn.jsdelivr.net/gh/marionebl/create-react-app@9f6282671c54f0874afd37a72f6689727b562498/screencast-error.svg' width='600' alt='Build errors'>
-</p>
 
 ### `npm test` or `yarn test`
 
