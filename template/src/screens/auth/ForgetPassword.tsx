@@ -1,7 +1,9 @@
 import React from "react";
 
 const ForgetPassword: React.FC = () => {
-  return <div></div>;
+  return <div>
+    forgot password screen
+  </div>;
 };
 
 export default ForgetPassword

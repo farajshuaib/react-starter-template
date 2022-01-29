@@ -3,4 +3,4 @@ import Layout from "./Layout";
 import LoadingScreen from "./LoadingScreen";
 
 
-export { Layout };
+export { Layout, LoadingScreen };

@@ -10,7 +10,9 @@ const Login: React.FC = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-  return <div></div>;
+  return <div>
+    login screen
+  </div>;
 };
 
 export default Login;

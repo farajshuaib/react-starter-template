@@ -3,7 +3,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 import Login from "../screens/auth/Login";
-import ForgetPassword from "../screens/auth/ForgetPassword"
+import ForgetPassword from "../screens/auth/ForgetPassword";
 import Home from "../screens/Home";
 import About from "../screens/About";
 import { Layout } from "../components";
@@ -14,16 +14,17 @@ const Routes = () => {
   const userData = useAppSelector((state) => state.auth.userData);
   return [
     {
+      // main routes
       path: "/",
-      element: userData ? <Layout /> : <Navigate to="/login" />,
+      element: <Layout />, // force user to login... use this => userData ? <Layout /> : <Navigate to="/login" />,
       // protected routes
       children: [
         {
-          path: "home",
+          path: "home/",
           element: <Home />,
         },
         {
-          path: "about",
+          path: "about/",
           element: <About />,
         },
       ],
@@ -31,12 +32,12 @@ const Routes = () => {
     {
       // public routes
       path: "/login",
-      element: !userData ? <Login /> : <Navigate to="/" />,
+      element: <Login />, // navigate user to main routers if he's already signed in ... use this => !userData ? <Login /> : <Navigate to="/" />,
     },
     {
       // public routes
       path: "/forget-password",
-      element: !userData ? <ForgetPassword /> : <Navigate to="/" />,
+      element: <ForgetPassword />, // navigate user to main routers if he's already signed in ... use this => !userData ? <Login /> : <Navigate to="/" />,
     },
   ];
 };

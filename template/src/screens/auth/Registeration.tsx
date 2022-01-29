@@ -10,7 +10,9 @@ const Registeration: React.FC = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-  return <div></div>;
+  return <div>
+    sign up screen
+  </div>;
 };
 
 export default Registeration;
