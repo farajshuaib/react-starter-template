@@ -12,7 +12,7 @@ const Axios = axios.create({
   },
 });
 
-// set yyor token here by call back this function after login... 
+// set yuor token here by call back this function after login... 
 export const setBearerToken = (token: string) =>
   Axios.interceptors.request.use((request: any) => {
     localStorage.setItem("token", token);

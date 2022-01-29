@@ -10,7 +10,6 @@ import global from "./reducers/global";
 const root = combineReducers({
   global,
   auth,
-  invoice,
 });
 
 export const store = createStore(root, applyMiddleware(ReduxThunk));

@@ -1,21 +1,21 @@
 {
-    "name": "cra-template-react-with-all-dep",
+    "name": "cra-template-starter-kit",
     "version": "1.0.0",
     "author": "faraj shuaib",
     "description": "a react template starter that make creating new project more easier with ready installed dependencies and state,routes seted up",
     "repository": {
         "type": "git",
-        "url": "https://github.com/farajshuaib/react-with-all-dep.git"
+        "url": "https://github.com/farajshuaib/starter-kit.git"
     },
     "bugs": {
-        "url": "https://github.com/farajshuaib/react-with-all-dep/issues"
+        "url": "https://github.com/farajshuaib/starter-kit/issues"
     },
     "keywords": [
         "react",
         "js",
         "template"
     ],
-    "homepage": "https://github.com/farajshuaib/react-with-all-dep",
+    "homepage": "https://github.com/farajshuaib/starter-kit",
     "license": "ISC",
     "devDependencies": {
         "prettier": "^2.5.1",
