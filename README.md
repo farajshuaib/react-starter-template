@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-    A Minimal Setup & Fast Boilerplate for <a href="https://reactjs.org/">React.js</a> with <a href="https://vitejs.dev/">Vite</a> and tailwindcss + all most used depedency
+    A Minimal Setup & Fast Boilerplate for <a href="https://reactjs.org/">React.js</a> with <a href="https://vitejs.dev/">Vite</a> and tailwindcss + all most used dependency
 </p>
 
 
 Create React apps with no build configuration.
 
-- [Creating an App](#creating-an-app) – How to create a new app.
+- [Creating an App](#creating-an-app) – How to create a new empty app.
 - [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
 
 
