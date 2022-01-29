@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/one-year-of-react-native.png"></img>
+    <img src="/one-year-of-react-native.png" width="50%"></img>
 </p>
 
 <p align="center">
