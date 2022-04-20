@@ -3,8 +3,26 @@ import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import { registerSW } from "virtual:pwa-register";
+import { useRegisterSW } from "virtual:pwa-register/react";
+
+if ("serviceWorker" in navigator) {
+  // && !/localhost/.test(window.location)) {
+  registerSW();
+}
+
+
+const intervalMS = 60 * 60 * 1000;
 
 const Wrapper: React.FC = ({ children }) => {
+  useRegisterSW({
+    onRegistered(r) {
+      r &&
+        setInterval(() => {
+          r.update();
+        }, intervalMS);
+    },
+  });
   return (
     <React.StrictMode>
       <Provider store={store}>

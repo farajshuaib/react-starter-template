@@ -10,3 +10,15 @@ export interface AuthData {
   password: string;
 }
 
+
+export interface meta {
+  count: number;
+  current: number;
+  from: number;
+  last_page: number;
+  per_page: number;
+  to: number;
+  total: number;
+  current_page?: number;
+}
+

@@ -1,8 +1,6 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
 import App from "./App";
-import { store } from "./store";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import Wrapper from "./Wrapper";
 
 
@@ -11,8 +9,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./styles/index.css";
 
 
-const container = document.getElementById("app");
-const root = createRoot(container);
+const app: any = document.getElementById("app");
+
+const root = createRoot(app);
 
 root.render(
   <Wrapper>
@@ -21,8 +20,3 @@ root.render(
 );
 
 
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
-serviceWorkerRegistration.register();

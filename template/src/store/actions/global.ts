@@ -1,2 +1,6 @@
 import {  } from "../types";
-import Axios from "../../services/Axios";
+import {useApi} from "../../hooks/useApi";
+import { AppDispatch, AuthData } from "../../types";
+
+
+const api = useApi()

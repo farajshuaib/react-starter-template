@@ -1,10 +1,13 @@
 import { SET_USER_DATA } from "../types";
-import Axios from "../../services/Axios";
+import {useApi} from "../../hooks/useApi";
 import { AppDispatch, AuthData } from "../../types";
+
+
+const api = useApi()
 
 export const authenticate = () => async (dispatch: AppDispatch) => {
   try {
-    const { data } = await Axios.get('/authenticate');
+    const { data } = await api.get('/authenticate');
     if (data?.data) {
       dispatch({
         type: SET_USER_DATA,
@@ -16,7 +19,7 @@ export const authenticate = () => async (dispatch: AppDispatch) => {
 
 export const login = (payload: AuthData) => async (dispatch: AppDispatch) => {
   try {
-    const { data } = await Axios.post('login',payload);
+    const { data } = await api.post('login',payload);
     if (data?.data?.user) {
       dispatch({
         type: SET_USER_DATA,
@@ -30,7 +33,7 @@ export const login = (payload: AuthData) => async (dispatch: AppDispatch) => {
 
 export const logOut = () => async (dispatch: AppDispatch) => {
   try {
-    await Axios.get('/logout');
+    await api.get('/logout');
     dispatch({
       type: SET_USER_DATA,
       data: null,
