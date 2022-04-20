@@ -1,6 +1,6 @@
 {
     "name": "cra-template-starter-kit",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "faraj shuaib",
     "description": "a react template starter that makes creating new project easier with ready installed dependencies and state, routes set up",
     "repository": {
