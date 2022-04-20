@@ -14,9 +14,9 @@ export default defineConfig({
         "apple-touch-icon.png",
       ],
       manifest: {
-        short_name: "ادارة الصيدلة",
-        name: "المركز الوطني لمكافحة الامراض",
-        description: "ادارة الصيدلة - المركز الوطني لمكافحة الامراض",
+        short_name: "short_name",
+        name: "name",
+        description: "description",
         icons: [
           {
             src: "/android-chrome-192x192.png",
@@ -29,7 +29,7 @@ export default defineConfig({
             type: "image/png",
           },
         ],
-        theme_color: "#B40001",
+        theme_color: "#111",
         background_color: "#ffffff",
       },
     }),
