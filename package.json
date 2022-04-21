@@ -18,6 +18,7 @@
     "homepage": "https://github.com/farajshuaib/starter-kit",
     "license": "ISC",
     "devDependencies": {
+        "@types/lodash": "^4.14.182",
         "prettier": "^2.5.1",
         "prettier-plugin-tailwindcss": "^0.1.3"
     }
