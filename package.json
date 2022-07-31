@@ -1,8 +1,8 @@
 {
     "name": "cra-template-starter-kit",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "author": "faraj shuaib",
-    "description": "a react template starter that makes creating new project easier with ready installed dependencies and state, routes set up",
+    "description": "a react template starter that makes creating new project easier with ready installed dependencies and state management and routes",
     "repository": {
         "type": "git",
         "url": "https://github.com/farajshuaib/starter-kit.git"
@@ -16,10 +16,5 @@
         "template"
     ],
     "homepage": "https://github.com/farajshuaib/starter-kit",
-    "license": "ISC",
-    "devDependencies": {
-        "@types/lodash": "^4.14.182",
-        "prettier": "^2.5.1",
-        "prettier-plugin-tailwindcss": "^0.1.3"
-    }
+    "license": "ISC"
 }

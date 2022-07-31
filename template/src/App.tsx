@@ -4,24 +4,14 @@ import router from "./router";
 import { useAppDispatch } from "./store";
 import { authenticate } from "./store/actions/auth";
 import { LoadingScreen } from "./components";
-import { useNetworkState } from "react-use";
-import { toast } from "react-toastify";
+;
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
-  const networkState = useNetworkState();
   const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    if (!networkState.online) {
-      toast.error("no internet connection", {
-        closeButton: false,
-        position: "top-center",
-      });
-    }
-  }, [networkState]);
-
   const routing = useRoutes(router());
+
+  
 
   const isLoggedIn = async () => {
     try {
